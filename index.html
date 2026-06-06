@@ -431,7 +431,7 @@ function animSteps(cb){
 }
 
 async function callAI(sys,usr){
-  const res=await fetch('/api/analyze',{
+  const res=await fetch('https://databall-api.i25030851.workers.dev',{
     method:'POST',headers:{'Content-Type':'application/json'},
     body:JSON.stringify({system:sys,user:usr})
   });
